@@ -194,6 +194,25 @@ main {
       border-color: rgba(255, 187, 0, 0.836);
       transition: all 0.75s ease-out; }
 
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .boxes div {
+    font-size: 1.25rem;
+    border: 8px white dotted;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    transition: all 0.75s ease-out; }
+    .boxes div:hover {
+      padding: 0.5rem 1.5rem;
+      background: rgba(255, 187, 0, 0.836);
+      color: teal; }
+      .boxes div:hover span {
+        color: teal; }
+
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
