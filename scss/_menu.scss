@@ -79,6 +79,7 @@
   &-branding {
     background: $primary-color;
     transform: translate3d(0, 100%, 0);
+    @include easeOut;
 
     &.show {
       // slide in from bottom
@@ -86,11 +87,11 @@
     }
 
     .portrait {
-      height: 250px;
       width: 250px;
-      background: url("../Images/LDClogoSmallER.png") no-repeat center;
-      border-radius: 40%;
-      border: solid 3px rgb(140, 215, 215);
+      height: 250px;
+      background: rgb(140, 215, 215);
+      border-radius: 50%;
+      border: solid 50px white;
     }
   }
 
@@ -111,23 +112,24 @@
   .nav-link {
     display: inline-block;
     position: relative;
-    font-size: 30px;
+    font-size: 20px;
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
+    // color: rgb(140, 215, 215);
     color: white;
     text-decoration: none;
     @include easeOut;
 
     &:hover {
-      color: $secondary-color;
+      color: rgb(140, 215, 215);
     }
   }
 }
 
-// delay each nav item slide by 0.1 seconds
+// delay each nav item slide by 0.2 seconds
 @for $x from 1 through 4 {
   .nav-item:nth-child(#{$x}) {
-    transition-delay: $x * 0.1s;
+    transition-delay: $x * 0.2s;
   }
 }

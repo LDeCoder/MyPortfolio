@@ -50,15 +50,16 @@
       transform: translate3d(0, 0, 0); }
   .menu-branding {
     background: #444;
-    transform: translate3d(0, 100%, 0); }
+    transform: translate3d(0, 100%, 0);
+    transition: all 0.75s ease-out; }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
-      height: 250px;
       width: 250px;
-      background: url("../Images/LDClogoSmallER.png") no-repeat center;
-      border-radius: 40%;
-      border: solid 3px #8cd7d7; }
+      height: 250px;
+      background: #8cd7d7;
+      border-radius: 50%;
+      border: solid 50px white; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.75s ease-out; }
@@ -69,7 +70,7 @@
   .menu .nav-link {
     display: inline-block;
     position: relative;
-    font-size: 30px;
+    font-size: 20px;
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
@@ -77,19 +78,56 @@
     text-decoration: none;
     transition: all 0.75s ease-out; }
     .menu .nav-link:hover {
-      color: rgba(255, 187, 0, 0.836); }
+      color: #8cd7d7; }
 
 .nav-item:nth-child(1) {
-  transition-delay: 0.1s; }
-
-.nav-item:nth-child(2) {
   transition-delay: 0.2s; }
 
+.nav-item:nth-child(2) {
+  transition-delay: 0.4s; }
+
 .nav-item:nth-child(3) {
-  transition-delay: 0.3s; }
+  transition-delay: 0.6s; }
 
 .nav-item:nth-child(4) {
-  transition-delay: 0.4s; }
+  transition-delay: 0.8s; }
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+  .show {
+    transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 1rem; }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0);
+    background: url; }
+  .portrait {
+    background: url("../Images/LDClogoSmallER.png");
+    background-size: cover;
+    opacity: 50%;
+    width: 125px;
+    height: 125px; } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh; }
+    main#home h1.show {
+      transform: translate3d(0, 0, 0);
+      height: 250px;
+      width: 250px; } }
 
 * {
   box-sizing: border-box; }
