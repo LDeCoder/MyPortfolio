@@ -23,8 +23,8 @@
     .btn-line {
       // line 1 - rotate
       &:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-        background: rgb(140, 215, 215);
+        transform: rotate(405deg) translate(5px, 5px);
+        background: set-text-color($secondary-color);
       }
 
       // line 2 - hide
@@ -33,8 +33,8 @@
       }
       // line 3 - rotate
       &:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -6px);
-        background: rgb(140, 215, 215);
+        transform: rotate(-405deg) translate(6.5px, -6.5px);
+        background: set-text-color($secondary-color);
       }
     }
   }
@@ -90,8 +90,9 @@
       width: 250px;
       height: 250px;
       background: rgb(140, 215, 215);
+      // background: url (".../Images/LDClogoSMALLgrey.jpg");
       border-radius: 50%;
-      border: solid 50px white;
+      border: solid 20px white;
     }
   }
 
@@ -117,7 +118,7 @@
     padding: 1rem 0;
     font-weight: 300;
     // color: rgb(140, 215, 215);
-    color: white;
+    color: set-text-color($primary-color);
     text-decoration: none;
     @include easeOut;
 
