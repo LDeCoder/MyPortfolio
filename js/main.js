@@ -11,6 +11,10 @@ let showMenu = false;
 
 menuBtn.addEventListener("click", toggleMenu);
 
+function myAlert() {
+  alert("Please submit resume request via LinkedIn or Email.");
+}
+
 function toggleMenu() {
   if (!showMenu) {
     menuBtn.classList.add("close");
