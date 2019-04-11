@@ -127,6 +127,7 @@ body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
+  overflow: hidden;
 }
 body#bg-img {
   background: url(../Images/LDeCoderPIClogo.png);
@@ -175,11 +176,23 @@ header {
   z-index: 2;
   width: 100%;
 }
+header .icons {
+  margin-top: 35px;
+  margin-left: 2rem;
+}
+header .icons a {
+  padding: 0.4rem;
+}
+header .icons a:hover {
+  color: rgba(255, 187, 0, 0.836);
+  transition: all 0.75s ease-out;
+}
 
 .text-secondary {
   color: rgba(255, 187, 0, 0.836);
 }
-
+/* 
+moved to top left of screen - inside header
 main {
   margin: 1rem;
   min-height: calc(100vh - 60px);
@@ -193,7 +206,7 @@ main .icons a {
 main .icons a:hover {
   color: rgba(255, 187, 0, 0.836);
   transition: all 0.75s ease-out;
-}
+} */
 main#home {
   overflow: hidden;
 }
